@@ -5,12 +5,13 @@
 
 /* solution # 3*/
 function reverse(str){
+  let reversed = '';
+  for (let character of str){
+    reversed = character + reversed;
     debugger;
-
-  
-    return str.split('').reduce((reversed, character) => 
-      character + reversed,'');
-
+  }
+     return reversed;
     }
+    //we need to call manually..otherwise above functiuon invokes nothing, whenever run debug
     reverse('asdf');
 module.exports= reverse;
