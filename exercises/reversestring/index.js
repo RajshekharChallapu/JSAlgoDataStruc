@@ -6,10 +6,8 @@
 /* solution # 2*/
 function reverse(str){
     //ES2015
-    let reversed='';
-    for (let character of str){
-        reversed = character + reversed;
+    return str.split('').reduce((reversed, character) => 
+      character + reversed,'');
+
     }
-    return reversed;
-}
 module.exports= reverse;
