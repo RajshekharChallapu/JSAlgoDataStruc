@@ -3,11 +3,14 @@
 // Examples   reverse('apple') === 'leppa'   reverse('hello') === 'olleh'
 // reverse('Greetings!') === '!sgniteerG'
 
-/* solution # 2*/
+/* solution # 3*/
 function reverse(str){
-    //ES2015
+    debugger;
+
+  
     return str.split('').reduce((reversed, character) => 
       character + reversed,'');
 
     }
+    reverse('asdf');
 module.exports= reverse;
