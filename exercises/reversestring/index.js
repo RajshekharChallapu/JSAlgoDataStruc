@@ -4,6 +4,7 @@
 // reverse('Greetings!') === '!sgniteerG'
 
 /* solution # 3*/
+/* The reverse()method reverses an array in place.The first array element becomes the last,and the last array element becomes the first. */
 function reverse(str){
   let reversed = '';
   for (let character of str){
