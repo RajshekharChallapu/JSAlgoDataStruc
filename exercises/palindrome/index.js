@@ -6,13 +6,11 @@
 // a palindrome. --- Examples:   palindrome("abba") === true
 // palindrome("abcdefg") === false
 
-/* Solution #1 */
+/* Solution #2 */
 function palindrome(str){
-const reversed = str
-.split('')
-.reverse()
-.join('');
+return str.split('').every((char, i)=>{
+    return char === str[str.length -i -1];
 
-return str === reversed;
+});
 }
 module.exports=palindrome;
